@@ -16,20 +16,21 @@ body {
 .container {
   margin-top: 2.5em;
   background: #1a1b21;
-  width: 19.8125rem;
+  width: 50%;
   margin: 0 auto;
   border-radius: 0.625rem;
 }
 
-.avatar {
-  width: 19.8125rem;
-  height: 19.8125rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-}
-
 .hero {
+  width: 100%;
   color: #fff;
   text-align: center;
+}
+.avatar {
+  width: 100%;
+  object-fit: cover;
+  height: 19.8125rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
 }
 
 .hero-title {
@@ -45,7 +46,7 @@ body {
   font-weight: 400;
 }
 
-.hero>a {
+.hero > a {
   display: block;
   width: 14.25rem;
   height: 1rem;
@@ -57,21 +58,27 @@ body {
   text-decoration: none;
 }
 
-button {
+.social-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  /* width: 5.1875rem; */
+  gap: .5rem;
+}
+
+.btn-flex {
+  width: 5.7rem;
   padding: 0.5625rem 0.8125rem;
   border: none;
   border-radius: 0.375rem;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .mail {
-  border: 1px solid var(--gray-300, #D1D5DB);
-  background: var(--white, #FFF);
+  border: 1px solid var(--gray-300, #d1d5db);
+  background: var(--white, #fff);
 }
 
 .linkedin {

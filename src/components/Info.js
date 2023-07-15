@@ -13,15 +13,11 @@ const Info = () => {
       />
       <h1 className="hero-title">Babajide Leke</h1>
       <h2 className="hero-description">Frontend Developer</h2>
-      <a href="https://github.com/el-jakes">www.github.com/el-jakes</a>
-        <button className='mail'>
-          <img src={mail} alt="email icon" />
-          Email
-        </button>
-        <button className='linkedin'>
-          <img src={linkedin} alt="email icon" />
-          LinkedIn
-        </button>
+      <a href="https://github.com/el-jakes">github.com/el-jakes</a>
+      <div className="social-links">
+        <button className="mail btn-flex"><img src={mail} alt="" /><span>Email</span></button>
+        <button className="linkedin btn-flex"><img src={linkedin} alt="" /><span>LinkedIn</span></button>
+      </div>
     </div>
   );
 };
